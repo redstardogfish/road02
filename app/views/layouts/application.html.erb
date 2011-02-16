@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" class="no-js"><head>
+  <title>Home - Second Road</title>
+  <meta name="description" content='Second Road' />
+  <meta name="keywords" content='Second Road' />
+  <meta name="description" content="" />
+  <meta name="robots" content="noarchive" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+
+
+  <%= javascript_include_tag 'jquery', 'jquery.superfish', 'modernizr-1.5.min',
+                             'http://use.typekit.com/aox0xcu.js', 'scripts', 'jquery.mousewheel.min' %>
+
+  <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+
+
+
+
+
+
+    <%= javascript_include_tag 'autocolumn'%>
+
+	<style>
+		.column *{ padding: 5px; }
+
+
+		#colwrapper { width: 600px;margin: 0px 100px; }
+		.wide, .thin { clear:both; }
+	</style>
+
+	<script>
+		$(function(){
+			$('h1').addClass('dontend');
+			$('.wide').columnize({
+				width : 300,
+				height : 300
+			});
+		});
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <%= csrf_meta_tag %>
+</head>
+	
+
+<%= tag(:body, {:class => @bodyclass}, true ) %>
+  <header>
+    <a id="logo" href="/"><img src="/images/logo.png" alt="Second Road" width="223" height="180" title="Second Road" /></a>
+
+	<%= render_navigation %>
+  </header>
+  <div id="wrapper">
+    <%= yield %>
+  </div>
+
+
+
+  <div id="overlayLeft" style="display: block"><a></a></div>
+  <div id="overlayRight" style="display: block"><a></a></div>
+  <footer>
+    <ul class="footerLinks">
+	  <li><a href="/">Home</a></li>
+	  <li><a href="/contact-us/" rel="nofollow">Contact</a></li>
+	  <li><a href="/privacy/" rel="nofollow">Privacy</a></li>
+	  <li><a href="http://www.reactive.com/" target="_blank">Website By Reactive</a></li>
+    </ul>
+
+    <fieldset class="searchBox">
+      <label for="search">Search</label>
+      <input name="ctl00$ctl00$ctl00$ContentPlaceHolderDefault$SearchBox_9$txt" 
+             type="text"             
+             id="ContentPlaceHolderDefault_SearchBox_9_txt" 
+             onfocus="this.value=&#39;&#39;" 
+             onkeydown="if ((event.which &amp;&amp; event.which == 13) || (event.keyCode &amp;&amp; event.keyCode == 13)) {__doPostBack(&#39;ctl00$ctl00$ctl00$ContentPlaceHolderDefault$SearchBox_9$btn&#39;,&#39;&#39;);return false;} else return true;" />
+      <input type="image" 
+             name="ctl00$ctl00$ctl00$ContentPlaceHolderDefault$SearchBox_9$btn" 
+             id="ContentPlaceHolderDefault_SearchBox_9_btn" 
+             Text="" 
+             src="/images/sbutton.gif" />
+    </fieldset>
+
+  </footer>
+
+<!--[if lt IE 7 ]><script src="/js/dd_belatedpng.js"></script><![endif]-->
+
+<script type="text/javascript">$(function(){var wrapperWidth = parseInt($('#content').width()) + parseInt($('#extras').width()) + parseInt($('#promos').width());$('#wrapper').css('width', wrapperWidth);$("body, html").mousewheel(function (event, delta) {this.scrollLeft -= (delta * 55);event.preventDefault();});});</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-19521003-1']);
+_gaq.push(['_trackPageview']);
+(function () {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script></body></html>
