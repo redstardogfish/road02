@@ -12,47 +12,10 @@
   <%= javascript_include_tag :defaults %>
 
 
-  <%= javascript_include_tag 'jquery', 'jquery.superfish', 'modernizr-1.5.min',
+  <%= javascript_include_tag 'jquery', 'jquery.superfish', 'modernizr-1.5.min', 'autocolumn', 'twscripts',
                              'http://use.typekit.com/aox0xcu.js', 'scripts', 'jquery.mousewheel.min' %>
 
   <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
-
-
-
-
-
-
-    <%= javascript_include_tag 'autocolumn'%>
-
-	<style>
-		.column *{ padding: 5px; }
-
-
-		#colwrapper { width: 600px;margin: 0px 100px; }
-		.wide, .thin { clear:both; }
-	</style>
-
-	<script>
-		$(function(){
-			$('h1').addClass('dontend');
-			$('.wide').columnize({
-				width : 300,
-				height : 300
-			});
-		});
-	</script>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   <%= csrf_meta_tag %>
@@ -63,7 +26,43 @@
   <header>
     <a id="logo" href="/"><img src="/images/logo.png" alt="Second Road" width="223" height="180" title="Second Road" /></a>
 
-	<%= render_navigation %>
+  <div class="mainNav">
+    <ul id="menu">
+
+	  <li class="whoWeAre parent"><a href="#">Who We Are</a>
+		<ul>
+	      <%= activate_li("ourDNA")%><a href="/pages/ourDNA/">Our DNA</a></li>
+	      <%= activate_li("ourCommunity") %><a href="/pages/ourCommunity/">Our Community</a></li>
+	      <%= activate_li("theSecondRoad")%><a href="/pages/theSecondRoad/">The Second Road?</a></li>
+	      <%= activate_li("thinkingLab")%><a href="/pages/thinkingLab/">The Thinking Lab</a></li>
+	    </ul>
+	  </li>
+	  <li class="whatWeDo parent"><a href="#">What We Do</a><ul>
+	      <%= activate_li("overview")%><a href="/pages/overview/">Overview</a></li>
+	      <%= activate_li("strategy")%><a href="/pages/strategy/">Strategy</a></li>
+	      <%= activate_li("innovation")%><a href="/pages/innovation/">Innovation</a></li>
+	      <%= activate_li("engagement")%><a href="/pages/engagement/">Engagement</a></li>
+	      <%= activate_li("clarity")%><a href="/pages/clarity/">Clarity</a></li>
+	      <%= activate_li("education")%><a href="/pages/education/">Education</a></li>
+	      <%= activate_li("leadership")%><a href="/pages/leadership/">Leadership</a></li>
+	      <%= activate_li("our-clients")%><a href="/pages/our-clients/">Our clients</a></li>
+	      <%= activate_li("strategy2")%><a href="/pages/strategy2/">Strategy2</a></li>
+	    </ul>
+
+	  </li>
+	  <li class="whatsNew parent"><a href="#">Whats New</a><ul>
+	      <li><a href="/pages/articles/">Articles</a></li>
+	      <li><a href="/pages/blog/">Blog</a></li>
+	      <li><a href="/pages/events/">Events</a></li>
+	    </ul>
+	  </li>
+
+	  <li><a href="/contact-us/">Contact Us</a><ul></ul>
+	  </li>
+	</ul>
+  </div>
+
+
   </header>
   <div id="wrapper">
     <%= yield %>

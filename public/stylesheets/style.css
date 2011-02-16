@@ -124,8 +124,13 @@ TOC - SECOND ROAD CSS
 			margin: 0 -10px 0 0;
 			padding:0 10px;
 		}
-		.mainNav ul li ul a:hover, .mainNav ul li ul li.active a  {
+		.mainNav ul li ul a:hover {
 			background: url(../images/orangeArrow.png) no-repeat 0px 9px !important;
+			padding: 0 10px 0 19px !important;
+		}
+		
+		.mainNav ul li ul li.active a  {
+			background: url(../images/orangeSpot.png) no-repeat 0px 9px !important;
 			padding: 0 10px 0 19px !important;
 		}
 		.mainNav ul li ul li.active a {
@@ -163,30 +168,6 @@ TOC - SECOND ROAD CSS
 			font-weight: normal;
 		}
 		
-		
-/* add collapsing styles */
-
-
-
-		body.enhanced ul#collapsing-nav span {
-			clear: both;
-			color: #3B3B3B;
-			float: right;
-			display: block;
-			font-size: 20px;
-			font-weight: bold;
-			height: 30px;
-			position: relative;
-			text-decoration: none;
-			white-space: nowrap;
-		}
-
-		body.enhanced ul#collapsing-nav span:hover {
-			background: #edebe5;
-			margin: 0 -10px 0 0;
-			padding:0 10px;
-			cursor: pointer;
-		}
 
 
 		
@@ -487,6 +468,13 @@ TOC - SECOND ROAD CSS
 	
 /* 4.0: CONTENT COLUMNS
 ****************************************/
+
+/*  FIRST, THE MULTI-COLUMN PATCH  */
+    .column *{ padding: 10px; }
+    #colwrapper { width: 600px;margin: 0px 100px; }
+    .wide, .thin { clear:both; }
+
+/*  BACK TO YOUR REGULAR PROGRAM   */
 	.contentColumns #extras {
 		height: 635px;
 		width: 539px;
