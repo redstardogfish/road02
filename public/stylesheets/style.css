@@ -130,7 +130,6 @@ TOC - SECOND ROAD CSS
 		}
 		
 		.mainNav ul li ul li.active a  {
-			background: url(../images/orangeSpot.png) no-repeat 0px 9px !important;
 			padding: 0 10px 0 19px !important;
 		}
 		.mainNav ul li ul li.active a {
@@ -466,12 +465,87 @@ TOC - SECOND ROAD CSS
 		font-weight: bold;
 	}
 	
+/* 3.5 Home section extra columns*/
+	.home_domain{
+		width:730px;height: 540px;;background:#f7f6f2;float:left;
+	}
+	
+    .home_domain h1 {
+		clear: both;
+		display: block;
+		color: #E4701E;
+		float: left;
+		font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
+		font-size: 46px;
+		font-weight: normal;
+		letter-spacing: -0.7px;
+		margin: 34px 0 0 42px;
+		min-width: 180px;
+    }	
+    .home_domain .text_cols {
+	    clear: both;
+    }
+
+
+    .home_domain .col{ width:275px;
+					   float: left;
+				       line-height: 21px;
+				       padding: 30px 0 30px 43px;
+
+    }
+
+    .col h2 {
+		color: #3B3B3B;
+		float: left;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 30px;
+		margin: 7px 0 1px;
+		text-transform: uppercase;
+     }
+    .col p {
+		color: #747474;
+		font-size: 14px;
+		line-height: 18px;
+		margin-top: 0 !important;
+		margin-bottom: 17px;
+    }
+	.col ul {
+		margin-bottom: 17px;
+	}
+	.col li {
+		color: #747474;
+		font-size: 14px;
+		line-height: 16px;
+		margin-top: 0 !important;
+		margin-bottom: 4px;
+		margin-left: 10px;
+		
+	}
+	.home_box_set{
+		width:540px;height:540px;
+		float:left;
+		background: green;
+	}
+	.home_box_set .box_element1 {
+		width:180px; height:180px;
+		background: #aaa;
+		float:left;
+	}
+	.home_box_set .box_element2 {
+		width:180px; height:180px;
+		background: #ccc;
+		float:left;
+	}
+
+	
+	
 /* 4.0: CONTENT COLUMNS
 ****************************************/
 
 /*  FIRST, THE MULTI-COLUMN PATCH  */
     .column *{ padding: 10px; }
-    #colwrapper { width: 600px;margin: 0px 100px; }
+    #colwrapper { width: 600px;margin: 0px 100px 30px 80px; }
     .wide, .thin { clear:both; }
 
 /*  BACK TO YOUR REGULAR PROGRAM   */

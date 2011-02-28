@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     @bodyclass = "home"
+    @width = 6170
   end
   
   
