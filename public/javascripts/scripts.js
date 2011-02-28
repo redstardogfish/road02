@@ -41,6 +41,12 @@ $(function() {
 			scrollLeft: offsetValue
 		}, 1000);
 	});
+	
+
+
+
+
+	});
 
 	$('ul.footerLinks li:last').css('border-right', '0');
 	
