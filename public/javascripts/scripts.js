@@ -146,3 +146,5 @@ function blogListing() {
 function formatInput(className, value) {
     $(className).focus(function () { if ($(this).val() == value) { $(this).val(""); } }).blur(function () { if ($(this).val() == "") { $(this).val(value); } });
 }
+
+
