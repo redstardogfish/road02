@@ -1,4 +1,6 @@
-<div id="content">
+<div id = "splash"><div id="splash_help"><a class="splash_help">We can help you with that...</a></div></div>
+<!-- <div id="content"> -->
+<div id="content_opening">
   <h1>How do you create a high-performance enterprise?</h1>
   <div class="homeParaLeft wysiwyg">
 	<p>High-performance thinking is the answer: clear, nimble and
@@ -36,6 +38,7 @@ questions.</p>
   </div>
   <ul class="homeLinks" />
 </div>
+<!-- </div> -->
 
 <div id="extras" class="homeServices">  
   <%= image_tag("services-image.jpg", :width => "720", :height => "359" ) %>
@@ -89,19 +92,67 @@ questions.</p>
     </div>
   </div>
 </div>
+
+
 <div class = "home_box_set">
-	<div class="box_element1"></div>
-	<div class="box_element2"><%= image_tag ("180wedge.png") %></div>
-	<div class="box_element1"></div>
-	
-	<div class="box_element2"><%= image_tag ("people/maureen_thurston.png") %></div>
-	<div class="box_element1"></div>
-	<div class="box_element2"><%= image_tag ("180abcd.png") %></div>
-	
-	<div class="box_element1"></div>
-	<div class="box_element2"><%= image_tag ("180reader.png") %></div>
-	<div class="box_element1"><%= image_tag ("180author.png") %></div>
+	<style type="text/css">
+
+	a:focus {
+		outline: none;
+	}
+	#panel {
+		background: #754c24;
+		height: 200px;
+		display: none;
+	}
+	.slide {
+		margin: 0;
+		padding: 0;
+		border-top: solid 4px #422410;
+		background: url(images/btn-slide.gif) no-repeat center top;
+	}
+	.btn-slide {
+		background: url(images/white-arrow.gif) no-repeat right -50px;
+		text-align: center;
+		width: 144px;
+		height: 31px;
+		padding: 10px 10px 0 0;
+		margin: 0 auto;
+		display: block;
+		font: bold 120%/100% Arial, Helvetica, sans-serif;
+		color: #fff;
+		text-decoration: none;
+	}
+	.active {
+		background-position: right 12px;
+	}
+	#behind_box{
+		position:relative;top:0;left:0; z-index: 1;
+	}
+	#front_box{
+		position:relative;top:0;left:0; z-index:2;
+	}
+	</style>
+	<div class = "home_box_set">
+		<div class="box_element1"><a class = "viewExpand"><%= image_tag ("180author.png") %></a></div>
+		<div id = "expandable">
+			<span class = "vid"><iframe title="YouTube video player" width="500" height="360"
+			src="http://www.youtube.com/embed/uoSLCZWxBYk" frameborder="0" allowfullscreen></iframe></span>
+			<div class= "closer"><a class="closer"></a></div>
+		</div>
+		<div class="box_element2"></div>
+		<div class="box_element1"></div>
+		<div class="box_element2"><%= image_tag ("180wedge.png") %></div>
+		<div class="box_element1"><%= image_tag ("180curveboard.png") %></div>
+		<div class="box_element2"></div>
+		<div class="box_element1"></div>
+		<div class="box_element2"></div>
+		<div class="box_element1"><%= image_tag ("180pens.png") %></div>
+	</div>
+
+
 </div>
+
 <div class= "home_domain" id = "innovate">
 	<h1>Innovate</h1>
   <div class = "text_cols">
@@ -123,15 +174,16 @@ questions.</p>
   </div>
 </div>
 <div class = "home_box_set">
-	<div class="box_element1"><%= image_tag ("people/alex_blunt.png") %></div>
-	<div class="box_element2"></div>
 	<div class="box_element1"></div>
-	<div class="box_element2"><%= image_tag ("180wedge.png") %></div>
-	<div class="box_element1"><%= image_tag ("180curveboard.png") %></div>
-	<div class="box_element2"></div>
+	<div class="box_element2"><%= image_tag ("180abcd.png") %></div>
+	<div class="box_element1"></div>
+	<div class="box_element2"><%= image_tag ("180pens.png") %></div>
 	<div class="box_element1"></div>
 	<div class="box_element2"></div>
-	<div class="box_element1"><%= image_tag ("180pens.png") %></div>
+	<div class="box_element1"><%= image_tag ("180wedge.png") %></div>
+	<div class="box_element2"><%= image_tag ("1802rsign.png") %></div>
+	<div class="box_element1"></div>
+
 </div>
 <div class= "home_domain" id = "engage">
 	<h1>Engage</h1>

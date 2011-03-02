@@ -14,6 +14,7 @@
 
   <%= javascript_include_tag 'jquery', 'jquery.superfish', 'modernizr-1.5.min', 'autocolumn', 'twscripts',  			
 							 'jquery.easyAccordion', 'jquery.scrollTo-1.4.2-min','jquery.localscroll-1.2.7-min','jquery.easing.1.3',
+							 'jquery.slidePanel.min',
                              'http://use.typekit.com/aox0xcu.js', 'scripts', 'jquery.mousewheel.min' %>
 
   <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
@@ -21,10 +22,37 @@
   <script type="text/javascript">$(function(){$("body, html").mousewheel(function (event, delta) {this.scrollLeft -= (delta * 55);event.preventDefault();});})</script>
 	<script type='text/javascript'>
 	  $(document).ready(function () {
+
 	  $.localScroll.defaults.axis = 'x';
 	  $.localScroll({offset: -233, easing: "easeOutBack", duration: 1000 });
+
+	  $('a.viewToggle').bind('click', function() {
+		$('ul.communityList').animate({ 'left' : '0' }, 1000);});
+		
+      $('a.articleClose').click(function() {
+    	$('ul.communityList').delay(250).animate({ 'left' : '-54px' }, 750);
+      });
+
+	  $('a.viewExpand').bind('click', function(){
+	   	$("div#expandable").fadeIn(2000);
+  	  ;});
+
+      $('a.closer').click(function() {
+    	$('div#expandable').fadeOut(1000);
+      });
+
+	  $('a.splash_help').click(function(){
+	    $('div#content_opening').fadeIn(1000);
+	    $('#wrapper').delay(1000).animate({'left':'-540px'}, 1000);	
+		$("#box").animate({opacity: "0", left: "+=1200"}, 5000)
+				return false;	
 	  });
+
+	  });
+
+
 	</script>
+
 
 
 
@@ -36,20 +64,20 @@
 
 <%= tag(:body, {:class => @bodyclass}, true ) %>
   <header>
-    <a id="logo" href="/"><img src="/images/logo.png" alt="Second Road" width="223" height="180" title="Second Road" /></a>
+    <a id="logo" href="#content"><img src="/images/logo.png" alt="Second Road" width="223" height="180" title="Second Road" /></a>
 
   <div class="mainNav">
     <ul id="menu">
 
 	  <li class="whoWeAre parent"><a href="#">Who We Are</a>
-		<!-- <ul>
+		<ul>
 	      <%= activate_li("ourDNA")%><a href="/pages/ourDNA/">Our DNA</a></li>
 	      <%= activate_li("ourCommunity") %><a href="/pages/ourCommunity/">Our Community</a></li>
 	      <%= activate_li("theSecondRoad")%><a href="/pages/theSecondRoad/">The Second Road?</a></li>
 	      <%= activate_li("thinkingLab")%><a href="/pages/thinkingLab/">The Thinking Lab</a></li>
-	    </ul> -->
+	    </ul>
 	  </li>
-	  <li class="whatWeDo parent"><a href="#">What We Do</a><ul>
+	  <li class="whatWeDo parent"><a href="#extras">What We Do</a><ul>
 	      <!-- <%= activate_li("overview")%><a href="/pages/overview/">Overview</a></li> -->
 	      <%= activate_li("strategy")%><a href="#strategise">Strategy</a></li>
 	      <%= activate_li("innovation")%><a href="#innovate">Innovation</a></li>
@@ -79,6 +107,7 @@
   <%= tag(:div, {:id => "wrapper", :style => "width:#{@width}px;"}, true ) %>
     <%= yield %>
   </div>
+  <div id="box"><%= image_tag('orangeArrow.png', :height=>"36px", :width => "36px" ) %></div>
 
 
 
