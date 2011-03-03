@@ -64,7 +64,7 @@ function initMenu() {
   });
 
   $('#trigger_exp').bind('click', function(){
-   	$("div#exp").fadeIn(1500);
+   	$("div#exp").slideToggle(1500);
   ;});
 
 
