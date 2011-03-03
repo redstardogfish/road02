@@ -1,12 +1,19 @@
 class PagesController < ApplicationController
   def home
     @bodyclass = "home"
-    @width = 8000
+    @width = 20000
   end
   
+  def splash
+    @bodyclass = "content"
+    @width = 720
+  end
   
 
   def whoWeAre
+    @bodyclass = "content"
+    @menuitem = "whoWeAre"
+        @width = 8000
   end
 
   def ourDNA

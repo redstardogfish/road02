@@ -1801,14 +1801,16 @@ TOC - SECOND ROAD CSS
   .splash_help{cursor:pointer;}
 
   #content_opening{
-	width:720px;height:540px; display:none;background: #f7f6f2;
+	width:720px;height:540px; display:block;background: #f7f6f2;
 		float: left;overflow:hidden;z-index:1;
   }
 
 
-  .viewExpand{
+  .viewExpand, .viewExpand2{
 	cursor:pointer;
   }
+
+
   .vid{
 	display:block; margin-left:auto;margin-right:auto;
   }
@@ -1826,7 +1828,7 @@ TOC - SECOND ROAD CSS
 	background: url(../images/blogListing/closeIt.png) no-repeat 0 -22px !important;		
 	
   }
-  #expandable{
+  #expandable, #expandable2{
 	width: 540px; height:360px;
 	display:none;
 	position: absolute;
@@ -1844,6 +1846,11 @@ TOC - SECOND ROAD CSS
 	width: 36px;
 	margin-top:550px;
     position:absolute;
+}
+
+.whoWeAre_panel{
+	width:720px;height:540px; display:block;background: #f7f6f2;
+		float: left;overflow:hidden;
 }
 
 

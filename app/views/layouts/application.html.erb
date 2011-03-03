@@ -20,42 +20,6 @@
   <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
 <!-- horizontal mousewheel script -->
   <script type="text/javascript">$(function(){$("body, html").mousewheel(function (event, delta) {this.scrollLeft -= (delta * 55);event.preventDefault();});})</script>
-	<script type='text/javascript'>
-	  $(document).ready(function () {
-
-	  $.localScroll.defaults.axis = 'x';
-	  $.localScroll({offset: -233, easing: "easeOutBack", duration: 1000 });
-
-	  $('a.viewToggle').bind('click', function() {
-		$('ul.communityList').animate({ 'left' : '0' }, 1000);});
-		
-      $('a.articleClose').click(function() {
-    	$('ul.communityList').delay(250).animate({ 'left' : '-54px' }, 750);
-      });
-
-	  $('a.viewExpand').bind('click', function(){
-	   	$("div#expandable").fadeIn(2000);
-  	  ;});
-
-      $('a.closer').click(function() {
-    	$('div#expandable').fadeOut(1000);
-      });
-
-	  $('a.splash_help').click(function(){
-	    $('div#content_opening').fadeIn(1000);
-	    $('#wrapper').delay(1000).animate({'left':'-540px'}, 1000);	
-		$("#box").animate({opacity: "0", left: "+=1200"}, 5000)
-				return false;	
-	  });
-
-	  });
-
-
-	</script>
-
-
-
-
 
 
   <%= csrf_meta_tag %>
@@ -64,19 +28,11 @@
 
 <%= tag(:body, {:class => @bodyclass}, true ) %>
   <header>
-    <a id="logo" href="#content"><img src="/images/logo.png" alt="Second Road" width="223" height="180" title="Second Road" /></a>
+    <%= link_to image_tag("logo.png", :alt => "Second Road", :width => 223, :height => 180), "#content_opening", :id => "logo" %>
 
   <div class="mainNav">
     <ul id="menu">
 
-	  <li class="whoWeAre parent"><a href="#">Who We Are</a>
-		<ul>
-	      <%= activate_li("ourDNA")%><a href="/pages/ourDNA/">Our DNA</a></li>
-	      <%= activate_li("ourCommunity") %><a href="/pages/ourCommunity/">Our Community</a></li>
-	      <%= activate_li("theSecondRoad")%><a href="/pages/theSecondRoad/">The Second Road?</a></li>
-	      <%= activate_li("thinkingLab")%><a href="/pages/thinkingLab/">The Thinking Lab</a></li>
-	    </ul>
-	  </li>
 	  <li class="whatWeDo parent"><a href="#extras">What We Do</a><ul>
 	      <!-- <%= activate_li("overview")%><a href="/pages/overview/">Overview</a></li> -->
 	      <%= activate_li("strategy")%><a href="#strategise">Strategy</a></li>
@@ -87,7 +43,14 @@
 	      <%= activate_li("leadership")%><a href="/pages/leadership/">Leadership</a></li> -->
 
 	    </ul>
-
+	  </li>
+	  <li class="whoWeAre parent"><a href="#ourdna">Who We Are</a>
+		<ul>
+	      <!-- <%= activate_li("ourDNA")%><a href="#ourdna">Our DNA</a></li> -->
+	      <%= activate_li("ourCommunity") %><a href="#">Our Community</a></li>
+	      <%= activate_li("theSecondRoad")%><a href="#secondroadstory">The Second Road?</a></li>
+	      <%= activate_li("thinkingLab")%><a href="#thinkinglab">The Thinking Lab</a></li>
+	    </ul>
 	  </li>
 	  <li class="whatsNew parent"><a href="#">Whats New</a><ul>
 	      <!-- <li><a href="/pages/articles/">Articles</a></li>

@@ -5,6 +5,8 @@ Road01::Application.routes.draw do
 
   get "pages/home"
 
+  match 'splash', :to => 'pages#splash'
+
 
 
   get "pages/whoWeAre"
