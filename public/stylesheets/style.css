@@ -1853,4 +1853,8 @@ TOC - SECOND ROAD CSS
 		float: left;overflow:hidden;
 }
 
-
+#exp{
+	background:red;
+	width:540px;height:540px;display:none;float:left;position:absolute;
+}
+#trigger_exp{cursor:pointer;}

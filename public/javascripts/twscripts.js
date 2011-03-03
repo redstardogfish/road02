@@ -43,7 +43,7 @@ function initMenu() {
   });
 
   $('a.viewExpand').bind('click', function(){
-   	$("div#expandable").fadeIn(2000);
+   	$("div#expandable").animate( { width: "show", height: "show" }, 1500 );
   ;});
 
   $('a.viewExpand2').bind('click', function(){
@@ -62,6 +62,12 @@ function initMenu() {
     window.location = '/';
 			return false;	
   });
+
+  $('#trigger_exp').bind('click', function(){
+   	$("div#exp").slideToggle(1500);
+  ;});
+
+
 
 
 
