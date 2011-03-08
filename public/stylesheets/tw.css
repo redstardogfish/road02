@@ -1,0 +1,162 @@
+/* 14.0 New elements - Mar 11*/
+  #splash{width:540px;height:540px; display:block; float:left;
+	      background: url("../images/p_holder_title_splash.png");
+  }
+  #splash_help{position:relative; margin-top:500px;margin-left:360px;
+	text-decoration:underline;color:#E4701E;
+  }
+  .splash_help{cursor:pointer;}
+
+  #content_opening{
+	width:720px;height:540px; display:block;background: #f7f6f2;
+		float: left;overflow:hidden;z-index:1;
+  }
+
+
+  .viewExpand, .viewExpand2{
+	cursor:pointer;
+  }
+
+
+  .vid{
+	display:block; margin-left:auto;margin-right:auto;
+  }
+  .closer{
+	background: url(../images/blogListing/closeIt.png) no-repeat;
+	cursor: pointer;
+	height:22px;
+	position:absolute;
+	right:0;
+	text-indent:-9999px;
+	top:0;
+	width:22px;	
+  }
+  .closer:hover{
+	background: url(../images/blogListing/closeIt.png) no-repeat 0 -22px !important;		
+	
+  }
+  #expandable, #expandable2{
+	width: 540px; height:360px;
+	display:none;
+	position: absolute;
+	z-index: 1000;
+	background: url("../images/blackboard.png");
+}
+
+  #roadway{
+	display:none; width:0;height:60px;
+	
+  }
+
+#box {
+	height: 36px;
+	width: 36px;
+	margin-top:550px;
+    position:absolute;
+}
+
+.whoWeAre_panel{
+	width:720px;height:540px; display:block;background: #f7f6f2;
+		float: left;overflow:hidden;
+}
+
+
+
+
+
+#trigger_exp_target{
+	background:red;
+	width:540px;height:540px;display:none;float:left;position:absolute;
+}
+#trigger_exp{cursor:pointer;}
+
+
+/* 	TEMP PAGE TRIGGERS AND TARGETS*/
+
+
+
+.fuse{cursor:pointer;}
+.fuse:hover{
+	filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  background:#fff;
+}
+
+
+
+
+
+#test1_target{
+	background:red;
+	width:540px;height:540px;display:none;float:left;position:absolute;
+}
+
+
+
+.push_reveal{
+	background:red;
+	width:720px;height:540px;
+	display:none;float:left;
+}
+.over_reveal{
+	background:blue;
+	width:540px;height:540px;
+	display:none;float:left;position:absolute;
+}
+
+/* DIVS FOR LITTLE SQUARES IN HORIZONTAL DISPLAY*/
+
+.one_col{
+	width:180px;height:540px;
+	float:left;
+	background:  #e2dfd8;
+}
+
+.two_col{
+	width:360px;height:540px;
+	float:left;
+	background: #e2dfd8;	
+}
+.three_col{
+	width:540px;height:540px;
+	float:left;
+	background: #e2dfd8;	
+}
+.four_col{
+	width:720px;height:540px;
+	float:left;
+	background: #e2dfd8;	
+}
+.five_col{
+	width:900px;height:540px;
+	float:left;
+	background: #e2dfd8;	
+}
+.six_col{
+	width:1080px;height:540px;
+	float:left;
+	background: #e2dfd8;	
+}
+
+.box_element{
+	width:180px; height:180px;
+	float:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

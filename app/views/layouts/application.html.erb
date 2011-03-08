@@ -33,12 +33,12 @@
   <div class="mainNav">
     <ul id="menu">
 
-	  <li class="whatWeDo parent"><a href="#extras">What We Do</a><ul>
+	  <li class="whatWeDo parent"><a href="#extras">What We Do</a><ul id = "what">
 	      <!-- <%= activate_li("overview")%><a href="/pages/overview/">Overview</a></li> -->
-	      <%= activate_li("strategy")%><a href="#strategise">Strategy</a></li>
-	      <%= activate_li("innovation")%><a href="#innovate">Innovation</a></li>
-	      <%= activate_li("engagement")%><a href="#engage">Engagement</a></li>
-	      <%= activate_li("clarity")%><a href="#illuminate">Illumination</a></li>
+	      <%= activate_li("strategy")%><a href="#strategise" id = "menu_strategy">Strategy</a></li>
+	      <%= activate_li("innovation")%><a href="#innovate" id = "menu_innovation">Innovation</a></li>
+	      <%= activate_li("engagement")%><a href="#engage" id = "menu_engagement">Engagement</a></li>
+	      <%= activate_li("clarity")%><a href="#illuminate" id = "menu_illumination">Illumination</a></li>
 	      <!-- <%= activate_li("education")%><a href="/pages/education/">Education</a></li>
 	      <%= activate_li("leadership")%><a href="/pages/leadership/">Leadership</a></li> -->
 
@@ -70,8 +70,6 @@
   <%= tag(:div, {:id => "wrapper", :style => "width:#{@width}px;"}, true ) %>
     <%= yield %>
   </div>
-  <div id="box"><%= image_tag('orangeArrow.png', :height=>"36px", :width => "36px" ) %></div>
-
 
 
   <div id="overlayLeft" style="display: block"><a></a></div>
