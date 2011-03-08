@@ -32,8 +32,19 @@ function initMenu() {
 
   initMenu();
 
+  $('html, body').animate({
+	    scrollLeft: 2000
+	}, 0);
+  $('html, body').animate({
+		    scrollLeft: ($("#wrapper").offset().left)-233-180
+		}, 4000);
+	
+	
+
+
+
   $.localScroll.defaults.axis = 'x';
-  $.localScroll({offset: -233, easing: "easeOutBack", duration: 1000 });
+  $.localScroll({offset: (-233-180), easing: "easeOutBack", duration: 1000 });
 
   $('a.viewToggle').bind('click', function() {
 	$('ul.communityList').animate({ 'left' : '0' }, 1000);});
@@ -64,11 +75,21 @@ function initMenu() {
   });
 
   $('#trigger_exp').bind('click', function(){
-   	$("div#exp").slideIn(1500);
+   	$("div#exp").slideToggle(1500);
   ;});
 
 
+  $('.fuse').click(function(){
+    var target_id = ("#" + $(this).attr("id")+"_target");
+    $(target_id).animate({ width: "toggle" }, 750 );	
+    $('html, body').animate({
+	    scrollLeft: ($(target_id).offset().left)-233-180
+	}, 1000);
+	$("#what").slideDown('normal');
 
+
+
+  });
 
 
   });

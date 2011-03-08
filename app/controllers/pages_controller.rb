@@ -64,8 +64,9 @@ class PagesController < ApplicationController
 
 
   def temp
-    @bodyclass = "content"
-    @menuitem = "ourDNA"
+    @bodyclass = "home"
+    @width = 20000
+
   end
   def temp2
 

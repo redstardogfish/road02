@@ -547,12 +547,12 @@ TOC - SECOND ROAD CSS
 	}
 	.home_box_set .box_element1 {
 		width:180px; height:180px;
-		background: #aaa;
+		background: #e2dfd8;
 		float:left;
 	}
 	.home_box_set .box_element2 {
 		width:180px; height:180px;
-		background: #ccc;
+		background: #e2dfd8;
 		float:left;
 	}
 
@@ -1791,70 +1791,3 @@ TOC - SECOND ROAD CSS
 		font-size: 10px;
 	}
 	
-/* 14.0 New elements - Mar 11*/
-  #splash{width:540px;height:540px; display:block; float:left;
-	      background: url("../images/p_holder_title_splash.png");
-  }
-  #splash_help{position:relative; margin-top:500px;margin-left:360px;
-	text-decoration:underline;color:#E4701E;
-  }
-  .splash_help{cursor:pointer;}
-
-  #content_opening{
-	width:720px;height:540px; display:block;background: #f7f6f2;
-		float: left;overflow:hidden;z-index:1;
-  }
-
-
-  .viewExpand, .viewExpand2{
-	cursor:pointer;
-  }
-
-
-  .vid{
-	display:block; margin-left:auto;margin-right:auto;
-  }
-  .closer{
-	background: url(../images/blogListing/closeIt.png) no-repeat;
-	cursor: pointer;
-	height:22px;
-	position:absolute;
-	right:0;
-	text-indent:-9999px;
-	top:0;
-	width:22px;	
-  }
-  .closer:hover{
-	background: url(../images/blogListing/closeIt.png) no-repeat 0 -22px !important;		
-	
-  }
-  #expandable, #expandable2{
-	width: 540px; height:360px;
-	display:none;
-	position: absolute;
-	z-index: 1000;
-	background: url("../images/blackboard.png");
-}
-
-  #roadway{
-	display:none; width:0;height:60px;
-	
-  }
-
-#box {
-	height: 36px;
-	width: 36px;
-	margin-top:550px;
-    position:absolute;
-}
-
-.whoWeAre_panel{
-	width:720px;height:540px; display:block;background: #f7f6f2;
-		float: left;overflow:hidden;
-}
-
-#exp{
-	background:red;
-	width:540px;height:540px;display:none;float:left;position:absolute;
-}
-#trigger_exp{cursor:pointer;}
