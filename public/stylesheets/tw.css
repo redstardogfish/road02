@@ -145,6 +145,11 @@
 	float:left;
 }
 
+.thin_vertical{
+	width:60px; height:540px;
+	float:left; overflow:none;
+}
+
 
 
 

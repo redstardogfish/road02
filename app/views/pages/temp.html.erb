@@ -1,6 +1,66 @@
-<div class = "one_col">
-	<div class = "box_element fuse what" id = "strategy_fuse"><%= image_tag ("placeholders/header_strategise.png") %></div>
+
+<!-- INTRO PARAGRAPH - HIGH PERFORMANCE ENTERPRISE -->
+<div id="content_opening">
+  <h1>How do you build a high-performance enterprise?</h1>
+  <div class="homeParaLeft wysiwyg">
+	<p>You need people who can think clearly, nimbly and imaginatively to explore, implement and achieve what is possible, not just probable. At Second Road we’ve devised an innovative system of Thinking Technologies™ designed to help clients prosper during times of unprecedented complexity and change.</p> 
+  </div>	
+  <div class="homeParaRight wysiwyg">
+	<p>Your firm will learn to think creatively to:</p>
+	<ul>
+      <li>convert complexity into strategic advantage</li>
+      <li>generate rule-breaking ideas</li>
+      <li>engage the workforce</li>
+      <li>demystify voluminous data</li>
+      <li>foster thoughtful leadership</li>
+      <li>reveal new opportunities hidden in complex questions.</li>
+	</ul>
+	<p>Click here for stories our work with clients</p>
+  </div>
+  <ul class="homeLinks" />
 </div>
+
+
+<div class = "three_col">
+	  <% image_array(3).each do |image| %>
+        <div class = "box_element"><%= image -%></div>
+	  <% end %>
+</div>
+
+
+<div id="extras" class="homeServices">  
+  <%= image_tag("services-image.jpg", :width => "720", :height => "359" ) %>
+  <h2>OUR DOMAINS OF EXPERIENCE AND EXPERTISE</h2>
+  <div class="servicesBox" id="servicesBoxStrategise" style="display:block">
+    <a href="#strategise">
+      <h3>STRATEGISE</h3>
+      <p>How do you build a future in an age of uncertainty?</p>
+    </a>
+  </div>
+
+  <div class="servicesBox">
+    <a href='#innovate'>
+	  <h3>INNOVATE</h3>
+      <p>How do you discover new opportunities and generate new ideas?</p>
+    </a>    
+  </div>
+  <div class="servicesBox">
+    <a href='#illuminate'>
+	  <h3>ILLUMINATE</h3>
+      <p>How do you turn too much information into useful knowledge?</p>
+    </a>
+  </div>
+  <div class="servicesBox">
+    <a href="#engage">
+	  <h3>ENGAGE</h3>
+      <p>How do you inspire employees to act?</p>
+    </a>    
+  </div>
+
+</div>
+
+
+<div class = "thin_vertical fuse" id = "strategy_fuse"><%= image_tag("fuses/fuse_strategy.png") %></div>
 <div id="strategy_fuse_target" class = "push_reveal">
 	<div class= "home_domain" id = "strategise">
 	  <h1>Strategise</h1>
@@ -28,11 +88,8 @@
 	</div>
 	
 </div>
-<div class = "one_col">
-	<div class = "box_element"><%= image_tag("placeholders/11.png") %></div>
-	<div class = "box_element"></div>
-	<div class = "box_element fuse" id = "innovation_fuse"><%= image_tag("placeholders/header_innovate.png") %></div>
-</div>
+
+<div class = "thin_vertical fuse" id = "innovation_fuse"><%= image_tag("fuses/fuse_innovation.png") %></div>
 <div id="innovation_fuse_target" class = "push_reveal">
     <div class= "home_domain" id = "innovate">
 		<h1>Innovate</h1>
@@ -57,16 +114,7 @@
 	</div>
 </div>
 
-<div class = "two_col">
-	  <% image_array(2).each do |image| %>
-        <div class = "box_element"><%= image -%></div>
-	  <% end %>
-</div>
-<div class = "one_col">
-	<div class = "box_element"></div>
-	<div class = "box_element fuse" id = "engagement_fuse"><%= image_tag("placeholders/header_engage.png") %></div>
-	<div class = "box_element"><%= image_tag("placeholders/21.png") %></div>
-</div>
+<div class = "thin_vertical fuse" id = "engagement_fuse"><%= image_tag("fuses/fuse_engagement.png") %></div>
 <div id="engagement_fuse_target" class = "push_reveal">
 	<div class= "home_domain" id = "engage">
 		<h1>Engage</h1>
