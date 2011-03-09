@@ -26,10 +26,14 @@ module ApplicationHelper
   end
   
   def generate_image_tag
-    image_number = (1..83).to_a.sort_by{rand}.first.to_i
-    image_number = (image_number+1000).to_s
-    name_fragment = image_number[1..-1]
-    image_name = "placeholders/"+name_fragment+".jpg"
+    # image_number = (1..83).to_a.sort_by{rand}.first.to_i
+    # image_number = (image_number+1000).to_s
+    # name_fragment = image_number[1..-1]
+
+    image_number = (1..24).to_a.sort_by{rand}.first.to_s
+    name_fragment = image_number
+
+    image_name = "placeholders/"+name_fragment+".png"
     image_tag(image_name, :alt => "")
   end
 
