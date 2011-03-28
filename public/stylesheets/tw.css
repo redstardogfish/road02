@@ -152,6 +152,76 @@
 
 
 
+.menu_trigger:hover{cursor:pointer;}
+
+
+.push_reveal a.closeIt {
+	background: url(../images/blogListing/closeIt.png) no-repeat;
+	cursor: pointer;
+	height:22px;
+	position:absolute;
+	float:right;;
+	text-indent:-9999px;
+	top:0;
+	width:22px;
+}
+.push_reveal a.closeIt:hover {
+	background-position: 0 -22px;
+}
+
+
+
+/* New styles for static page*/
+.home_text {
+	width:540px;height: 540px;;background:#f7f6f2;float:left;
+	border-left-style: dotted; border-color: red; border-width: 1px;
+}
+    
+.home_text h1{
+	clear: both;
+	display: block;
+	width: 450px;
+	color: #E4701E;
+	float: left;
+	font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: -0.7px;
+	margin: 34px 0 0 42px;
+	min-width: 180px;
+}
+.home_text p {
+	color: #747474;
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 0 !important;
+	margin-bottom: 17px;
+}
+.home_text ul {
+	margin-bottom: 17px;
+}
+.home_text li {
+	color: #747474;
+	font-size: 14px;
+	line-height: 16px;
+	margin-top: 0 !important;
+	margin-bottom: 4px;
+	margin-left: 10px;
+	
+}
+.col360{ width:360px;
+		 float: left;
+		 line-height: 21px;
+		 padding: 30px 0 30px 43px;
+				
+}
+
+
+.col450{ width:450px;
+		 float: left;
+	     line-height: 21px;
+	     padding: 0px 0 30px 43px;
+}
 
 
 

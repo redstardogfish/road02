@@ -485,7 +485,8 @@ TOC - SECOND ROAD CSS
 	
 /* 3.5 Home section extra columns*/
 	.home_domain{
-		width:730px;height: 540px;;background:#f7f6f2;float:left;
+		width:540px;height: 540px;;background:#f7f6f2;float:left;
+		border-left-style: dotted; border-color: red; border-width: 1px;
 	}
 	
     .home_domain h1 {
@@ -505,11 +506,11 @@ TOC - SECOND ROAD CSS
     }
 
 
-    .home_domain .col{ width:275px;
+    .home_domain .col{ width:360px;
 					   float: left;
 				       line-height: 21px;
 				       padding: 30px 0 30px 43px;
-
+					
     }
 
     .col h2 {
@@ -540,6 +541,8 @@ TOC - SECOND ROAD CSS
 		margin-left: 10px;
 		
 	}
+
+	
 	.home_box_set{
 		width:540px;height:540px;
 		float:left;

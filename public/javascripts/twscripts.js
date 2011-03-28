@@ -1,5 +1,7 @@
+
+// autocolumn function
 $(function(){
-	$('h1').addClass('dontend');
+	$('#colwrapper h1').addClass('dontend');
 	$('.wide').columnize({
 		width : 300,
 		height : 600
@@ -86,9 +88,17 @@ function initMenu() {
 	    scrollLeft: ($(target_id).offset().left)-233-180
 	}, 1000);
 	$("#what").slideDown('normal');
+  });
 
-
-
+  $('.menu_trigger').click(function(){
+  	var target_id = ("#" + $(this).attr("id")+"_fuse_target");
+    $(target_id).animate({ width: "show" }, 0 );	
+    $('html, body').animate({
+	    scrollLeft: ($(target_id).offset().left)-233-180
+	}, 1000);
+  });
+  $('a.closeIt').click(function(){
+    $((this).parent).animate({width: 0}, 500)	
   });
 
 

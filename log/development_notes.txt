@@ -1,0 +1,20 @@
+28.3.11
+Working on /pages/temp 
+Inserting all the text.
+The sections have got substantially trimmed, so the original boxes are looking overblown. Also the headings are very large.
+So I'm writing a new set of classes for these sections:
+
+.home_text     - width
+.home_text h1  - heading size and colour
+
+I'm hoping .home_text will work with a single column for each section.
+
+I removed the .home_domain h1 style as it is exactly what I'm wanting in the new style.
+
+I'm building up the pages/temp page by putting all the final text in their own divs to see if they fit and look ok - we'll add the graphical elements, and dynamic effects later.
+
+I'm putting a left border on the divs so that I can be sure I'm seeing them.
+
+The bottom questions in the domain areas look too cramped in the bullet points - they should be more or less a single line. I'm adding a class in home_domain as col450 to give a 450 width.
+
+I'm rationialising the classes for .home_text boxes - so that I can have narrow and wide paras.
