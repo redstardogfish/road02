@@ -174,7 +174,7 @@
 /* New styles for static page*/
 .home_text {
 	width:540px;height: 540px;;background:#f7f6f2;float:left;
-	border-left-style: dotted; border-color: red; border-width: 1px;
+	display:none;
 }
     
 .home_text h1{
@@ -209,6 +209,37 @@
 	margin-left: 10px;
 	
 }
+.home_text a.closeIt {
+	background: url(../images/blogListing/closeIt.png) no-repeat;
+	cursor: pointer;
+	height:22px;
+	position:absolute;
+    float:right;
+	text-indent:-9999px;
+	top:0;
+	width:22px;
+}
+.home_text a.closeIt:hover {
+	background-position: 0 -22px;
+}
+
+.home_text div.closeIt {
+	background: url(../images/blogListing/closeIt.png) no-repeat;
+	cursor: pointer;
+	height:22px;width:22px;
+	text-indent:-9999px;
+	float:right;
+}
+
+.home_text div.closeIt:hover {
+	background-position: 0 -22px;
+}
+
+/* the openIt pair to the above...*/
+.openIt{
+	cursor:pointer;
+}
+
 .col360{ width:360px;
 		 float: left;
 		 line-height: 21px;

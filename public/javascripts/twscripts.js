@@ -34,13 +34,15 @@ function initMenu() {
 
   initMenu();
 
-  $('html, body').animate({
-	    scrollLeft: 2000
-	}, 0);
-  $('html, body').animate({
-		    scrollLeft: ($("#wrapper").offset().left)-233-180
-		}, 4000);
-	
+
+	// the initial scroll
+	//   $('html, body').animate({
+	//     scrollLeft: 2000
+	// }, 0);
+	//   $('html, body').animate({
+	// 	    scrollLeft: ($("#wrapper").offset().left)-233-180
+	// 	}, 4000);
+	// 
 	
 
 
@@ -68,13 +70,13 @@ function initMenu() {
 	$('div#expandable').fadeOut(1000);
   });
 
-  $('a.splash_help').click(function(){
-    $('div#content_opening').fadeIn(1000);
-    $('#wrapper').delay(1000).animate({'left':'-540px'}, 1000);	
-	$("#box").animate({opacity: "0", left: "+=1200"}, 5000);
-    window.location = '/';
-			return false;	
-  });
+	//   $('a.splash_help').click(function(){
+	//     $('div#content_opening').fadeIn(1000);
+	//     $('#wrapper').delay(1000).animate({'left':'-540px'}, 1000);	
+	// $("#box").animate({opacity: "0", left: "+=1200"}, 5000);
+	//     window.location = '/';
+	// 		return false;	
+	//   });
 
   $('#trigger_exp').bind('click', function(){
    	$("div#exp").slideToggle(1500);
@@ -98,8 +100,18 @@ function initMenu() {
 	}, 1000);
   });
   $('a.closeIt').click(function(){
-    $((this).parent).animate({width: 0}, 500)	
+    $((this).parent).animate({width: 'toggle'}, 500)	
+  });
+  
+  $('div.openIt').click(function(){
+    $(this).parent().next().animate({width: "toggle"}, 500);
+	$('html, body').animate({
+	    scrollLeft: ($(this).offset().left)-233
+	}, 1000);	
   });
 
+  $('div.closeIt').click(function(){
+	$(this).parent().animate({width:0},500)	
+  });
 
   });

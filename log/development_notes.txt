@@ -18,3 +18,31 @@ I'm putting a left border on the divs so that I can be sure I'm seeing them.
 The bottom questions in the domain areas look too cramped in the bullet points - they should be more or less a single line. I'm adding a class in home_domain as col450 to give a 450 width.
 
 I'm rationialising the classes for .home_text boxes - so that I can have narrow and wide paras.
+
+
+30.3.11
+Having got all the static text in place, I'm looking at generic animation.
+
+First, I am putting a closeIt x at the top right of each text box. 
+It wants to be an x and to change colour on hover.
+I'm borrowing the style from the one used many times, taking it from my push_reveal class and putting it under the home_text class.
+The x box is not sitting on the right margin of the div containing it.
+I changed all the links from <a> tags to <div> - I know there might be an old browser issue, but hopefully very old...
+I've put them in all the text boxes.
+
+Now I want clicking the x box to close the div.
+It is the parent div, so I hope the .parent property will work to id the target in jquery.
+Working in twscripts.
+That seems to work without a problem - it closes the <div> (I learned you have to use .parent() not just .parent)
+
+Now I want a system to open each <div>. I'm thinking I could use an #id based system, or a .next
+I think I will try for a next based approach - next(".home_text")
+
+I used (this).parent().next()
+It works fine, but not with the closeIt <div> - i've set it with .animate({width:'toggle'}, 500) and that is fine, but the close is not clean - it leaves the closeIt div hanging on the left.
+So for this round I'm going to remove the x boxes, and leave the <div> to both open and close.
+I'll set all the display in .home_text to none.
+Done. 
+I've changed all the placeholder graphics to be a bit more lookable...
+
+Last thing today, I just want to animate the box to line up at the left when opened.
