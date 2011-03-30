@@ -114,4 +114,12 @@ function initMenu() {
 	$(this).parent().animate({width:0},500)	
   });
 
+// this one to stop animation when manually scrolling
+	$('body,html').bind('scroll mousedown DOMMouseScroll mousewheel keyup', function(e){
+	 if ( e.which > 0 || e.type == "mousedown" || e.type == "mousewheel"){
+	  $("html,body").stop();
+	 }
+	});
+
+
   });
