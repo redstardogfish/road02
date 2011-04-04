@@ -107,7 +107,7 @@ function initMenu() {
     $(this).parent().next().animate({width: "toggle"}, 500);
 	$('html, body').animate({
 	    scrollLeft: ($(this).offset().left)-233
-	}, 1000);	
+	}, 1000);
   });
 
   $('div.closeIt').click(function(){
@@ -120,6 +120,19 @@ function initMenu() {
 	  $("html,body").stop();
 	 }
 	});
+	
+	//   $('img[src*="header_"]').mouseover(function(){
+	// var prefix = ($(this).attr("src").split('.png', 1));
+	// var new_src = '<img src = '+prefix[0] + '_hover.png>';
+	//     $(this).replaceWith(new_src);	
+	//   });
+	//   $('div.openIt img').hover(function(){
+	// var prefix = ($(this).attr("src").split('.png', 1));
+	// var new_src = '<img src = '+prefix[0] + '_hover.png>';
+	// $(this).replaceWith(new_src)};
+	// function(){
+	//     
+	//   });
 
 
   });

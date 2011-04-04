@@ -46,3 +46,9 @@ Done.
 I've changed all the placeholder graphics to be a bit more lookable...
 
 Last thing today, I just want to animate the box to line up at the left when opened.
+
+
+4.4.11
+Working with tim gs today, we are going for the quickest possible pathway to Getting It Done.
+Going for a layout for each domain area that has links to 3 case studies.
+I've laid them out, and uploading to git/heroku

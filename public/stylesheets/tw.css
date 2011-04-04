@@ -111,33 +111,27 @@
 .one_col{
 	width:180px;height:540px;
 	float:left;
-	background:  #e2dfd8;
 }
 
 .two_col{
 	width:360px;height:540px;
-	float:left;
-	background: #e2dfd8;	
+	float:left;	
 }
 .three_col{
 	width:540px;height:540px;
-	float:left;
-	background: #e2dfd8;	
+	float:left;	
 }
 .four_col{
 	width:720px;height:540px;
 	float:left;
-	background: #e2dfd8;	
 }
 .five_col{
 	width:900px;height:540px;
-	float:left;
-	background: #e2dfd8;	
+	float:left;	
 }
 .six_col{
 	width:1080px;height:540px;
-	float:left;
-	background: #e2dfd8;	
+	float:left;	
 }
 
 .box_element{
@@ -172,11 +166,14 @@
 
 
 /* New styles for static page*/
-.home_text {
-	width:540px;height: 540px;;background:#f7f6f2;float:left;
-	display:none;
+.home_sliding_box {
+	width:1080px;height:540px;display:none;float:left;
 }
-    
+
+.home_text {
+	width:540px;height: 540px;background:#f7f6f2;float:left;
+}
+   
 .home_text h1{
 	clear: both;
 	display: block;
@@ -235,8 +232,26 @@
 	background-position: 0 -22px;
 }
 
+.case_study_display{
+	width:540px;height:540px;background:#f7f6f2;float:left;
+}
+.large_image180{float:left;height:180px;}
+.large_image360{float:left;height:360px;}
+.large_image540{float:left;height:540px;}
+
+.case_study_link{
+		width:180px; height:180px;
+		float:left;
+}
+.tall_thin{
+	width:180px;height:540px;float:left;
+}
+
+
 /* the openIt pair to the above...*/
 .openIt{
+	height:180px;
+	width:180px;
 	cursor:pointer;
 }
 
@@ -253,6 +268,10 @@
 	     line-height: 21px;
 	     padding: 0px 0 30px 43px;
 }
+
+
+
+
 
 
 
