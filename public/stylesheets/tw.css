@@ -269,6 +269,45 @@
 	     padding: 0px 0 30px 43px;
 }
 
+.captionBox {width:180px; height:20px; background:#3b3b3b;}
+
+.domainServices {
+	background: #e8e5de;
+	border-right: 1px solid #fff;
+	float: left;
+	height: 157px;
+	width: 179px;
+}
+.domainServices a {
+	float: left;
+	height: 157px;
+	width: 179px;
+}
+.domainServices h3 {
+	float:left;
+	font-size:15px;
+	margin: 34px 0 0 21px;
+}
+.domainServices a:hover {
+	background: url('../images/promoLink.jpg') no-repeat 0 -180px;
+	text-decoration: none !important;
+}
+.domainServices a:hover p {
+	color: #ffecde;
+}
+.domainServices a:hover h3 {
+	color: #fff;
+}
+.domainServices p {
+	clear: both;
+	color: #9a9894;
+	float: left;
+	font-family: 'Georgia','Times New Roman','Times','serif';
+	font-size: 14px;
+	font-style: italic;
+	margin: 11px 0 0 21px;
+	width: 125px;
+}
 
 
 
