@@ -8,7 +8,7 @@
 
 <div class = "home_text">
   <h1>	How do you shape the future of your enterprise?</h1>
-  <!-- <div class="closeIt">CLOSE</div> -->
+  <div class="closeIt">CLOSE</div>
   <div class="col360">
 	<p>At Second Road we’ve devised a unique approach to strategy + innovation to help our clients thrive in times of unprecedented complexity and change. We use the arts of conversation and design to teach organisations how to grapple with ambiguity, tackle big, wicked problems, and unlock creative thinking. To help clients co-design their future we work within six primary domains.</p> 
   </div>	
@@ -22,23 +22,20 @@
 
 <!-- LEAD -->
 
-<div class = "one_col">
-    <div class = "large_image360"> <%= image_tag("placeholders/home_1.png") %></div>	
+<div class = "one_col" id ="firstDomain">
+    <div class = "large_image360"> <%= image_tag("placeholders/home_1.png") %></div>
     <div class = "openIt">
-	  <div class = "captionBox">
-	  	<%= image_tag("spacer.gif", :size=> "180x20") %>
-	  </div>
 	  <div class="domainServices">
   	    <a>
 		  <h3>LEAD</h3>
-	      <p>influence with wisdom.</p>
+	      <p>Influence wisely.</p>
 	    </a>    
 	  </div>
     </div>                      
 </div>
 <div class = "home_sliding_box">
   <div class = "home_text">
-    <!-- <div class="closeIt">CLOSE</div> -->
+    <div class="closeIt">CLOSE</div>
     <h1>	Lead - influence wisely</h1>
     <div class="col360">
   	  <p>Leaders face uncertainty and the unknown. They take on the responsibility of equipping individuals and organisations with the will to make things different and to realize potential. Designing genuinely better futures requires depth - the mindset and skill to lead with wisdom:</p> 
@@ -61,10 +58,12 @@
     </div>	
   </div>
   <div class = "case_study_display">
-    <div class = "large_image540"><%= image_tag("temp/red_pic.png", :size => "360x540" ) %></div>
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
+    <div class = "large_image180"><%= image_tag("homeImages/lead_top.png", :size => "540x180" ) %></div>
+    <div class = "caseStudyLink darkSquare"><p>How do you engage all stakeholders?</p></div>
+    <div class = "caseStudyLink lightSquare"><p>How do you influence with wisdom?</p></div>
+    <div class = "caseStudyLink darkSquare"><p>How do you kindle the brilliance in a team?</p></div>
+    <div class = "large_image180"><%= image_tag("homeImages/lead_bottom.png", :size => "540x180" ) %></div>
+
   </div>
 </div>
 
@@ -78,7 +77,7 @@
 		<div class="domainServices">
   	      <a>
 		    <h3>STRATEGIZE</h3>
-	        <p>identity and purpose in an age of uncertainty.</p>
+	        <p>Define direction in an age of uncertainty.</p>
 	      </a>    
 	  </div>
 	</div>                      
@@ -86,7 +85,7 @@
 
 <div class = "home_sliding_box">
   <div class = "home_text" >
-    <!-- <div class="closeIt">CLOSE</div>	 -->
+    <div class="closeIt">CLOSE</div>	
     <h1>	Strategise - define direction in an age of uncertainty</h1>
     <div class="col360">
   	  <p>A successful strategy is a robust blend of imagination and coherent intent, a dynamic fit of meaning and context. We work with clients to ignite their inherent creativity and to design their future success by:</p> 
@@ -108,10 +107,11 @@
     </div>	
   </div>
   <div class = "case_study_display">
-    <div class = "large_image360"><%= image_tag("temp/red_pic.png", :size => "540x360" ) %></div>
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
+    <div class = "large_image180"><%= image_tag("homeImages/strategize_top.png", :size => "540x180" ) %></div>
+    <div class = "caseStudyLink darkSquare"><p>How do you re-think an industry?</p></div>
+    <div class = "caseStudyLink lightSquare"><p>How do you shift a deeply bureaucratic enterprise?</p></div>
+    <div class = "caseStudyLink darkSquare"><p>How do you create a compelling value proposition?</p></div>
+    <div class = "large_image180"><%= image_tag("homeImages/strategize_bottom.png", :size => "540x180" ) %></div>
   </div>
 
 </div>
@@ -124,7 +124,7 @@
 	  <div class="domainServices">
   	    <a>
 		  <h3>INNOVATE</h3>
-	      <p>new opportunities, groundbreaking solutions.</p>
+	      <p>Discover new opportunities to invent groundbreaking solutions.</p>
 	    </a>    
 	  </div>
     </div>                      
@@ -132,8 +132,8 @@
 
 <div class = "home_sliding_box">
   <div class = "home_text" >
-    <!-- <div class="closeIt">CLOSE</div> -->	
-    <h1>	Innovate - discovering new opportunities to invent groundbreaking solutions</h1>
+    <div class="closeIt">CLOSE</div>	
+    <h1>	Innovate - discover new opportunities to invent groundbreaking solutions</h1>
     <div class="col360">
  	  <p>Brilliant ideas that deliver a competitive edge come from a mindset and process of design. Second Road works with clients to:</p> 
 	  <ul>	
@@ -152,15 +152,22 @@
     </div>	
   </div>
   <div class = "case_study_display">
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-    <div class = "large_image180"><%= image_tag("temp/red_pic.png", :size => "360x180" ) %></div>
+    <div class = "caseStudyLink darkSquare"><p>How do you sponsor a culture of creativity?</p></div>
+    <div class = "large_image180"><%= image_tag("homeImages/innovate_top_right.png", :size => "360x180" ) %></div>
 
-	<div class = "box_element"><%= image_tag("temp/red_pic.png", :size => "180x180" )%></div>	
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-	<div class = "box_element"><%= image_tag("temp/red_pic.png", :size => "180x180" )%></div>
+	<div class = "box_element"><%= image_tag("homeImages/innovate_middle_left.png", :size => "180x180" )%></div>	
+    <div class = "caseStudyLink lightSquare"><p>How do you use the user experience to life?</p></div>
+    <div class = "box_element"><%= image_tag("homeImages/innovate_middle_right.png", :size => "180x180") %></div>
 	
-    <div class = "large_image180"><%= image_tag("temp/red_pic.png", :size => "360x180" ) %></div>
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
+    <div class = "large_image180"><%= image_tag("homeImages/innovate_bottom_left.png", :size => "360x180" ) %></div>
+    <div class = "caseStudyLink darkSquare"><p>Who is the real client and how do we accommodate their needs?</p></div>
+
+
+
+
+
+
+
   </div>
 </div>
 <!-- ENGAGE -->
@@ -171,7 +178,7 @@
 	  <div class="domainServices">
   	    <a>
 		  <h3>ENGAGE</h3>
-	      <p>co-creating the future.</p>
+	      <p>Inspire communities toward action.</p>
 	    </a>    
 	  </div>
     </div>                      
@@ -180,7 +187,7 @@
 
 <div class = "home_sliding_box">
   <div class = "home_text" >
-    <!-- <div class="closeIt">CLOSE</div> -->
+    <div class="closeIt">CLOSE</div>
     <h1>	Engage - inspire communities toward action</h1>
     <div class="col360">
  	  <p>Let’s be honest, few people like change. Even the most well-intentioned organisational change campaign stalls when inertia sets in. But when leaders learn to truly engage employees in building a shared future, everyone helps to drive change.</p> 
@@ -196,10 +203,10 @@
     </div>	
   </div>
   <div class = "case_study_display">
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-    <div class = "large_image360"><%= image_tag("temp/red_pic.png", :size => "540x360" ) %></div>
+    <div class = "caseStudyLink darkSquare"><p>How do you bring change that is relevant for all employees?</p></div>
+    <div class = "caseStudyLink lightSquare"><p>How do you co-design a shared vision?</p></div>
+    <div class = "caseStudyLink darkSquare"><p>How do you shift from compliance to clarity of intent?</p></div>
+    <div class = "large_image360"><%= image_tag("homeImages/engage_bottom.png", :size => "540x360" ) %></div>
   </div>
 </div>
 
@@ -219,7 +226,7 @@
 
 <div class = "home_sliding_box">
   <div class = "home_text" >
-    <!-- <div class="closeIt">CLOSE</div> -->
+    <div class="closeIt">CLOSE</div>
     <h1>	Clarify - turn volumes of information into useful knowledge</h1>
     <div class="col360">
 	  <p>Your people need to make more informed decisions, faster. To do this, they must:</p> 
@@ -241,12 +248,11 @@
     </div>	
   </div>
   <div class = "case_study_display">
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-    <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-	
-    <div class = "large_image180"><%= image_tag("temp/red_pic.png", :size => "540x360" ) %></div>
+    <div class = "large_image180"><%= image_tag("homeImages/clarify_top.png", :size => "540x180" ) %></div>
+    <div class = "caseStudyLink darkSquare"><p>How do you make sense out of 400 page board report?</p></div>
+    <div class = "caseStudyLink lightSquare"><p>How do you balance customer expectations with the dictates of our legal department?</p></div>
+    <div class = "caseStudyLink darkSquare"><p>How do you shift from compliance to clarity of intent?</p></div>
+    <div class = "large_image180"><%= image_tag("homeImages/clarify_bottom.png", :size => "540x180" ) %></div>
   </div>
 </div>
 
@@ -258,7 +264,7 @@
 	  <div class="domainServices">
   	    <a>
 		  <h3>LEARN</h3>
-	      <p>a learning mindset throughout the organisation.</p>
+	      <p>Build an inquiring mindset.</p>
 	    </a>    
 	  </div>
     </div>                      
@@ -266,7 +272,7 @@
 
 <div class = "home_sliding_box">
   <div class = "home_text" >
-    <!-- <div class="closeIt">CLOSE</div> -->
+    <div class="closeIt">CLOSE</div>
     <h1>	Learn - building an inquiring mindset</h1>
     <div class="col360">
 	  <p>Designing the future requires a willingness to learn and an instinct for sense-making and storytelling. Your people need skills to face the future with creativity and a spirit of enterprise. We works with clients to build those capabilities. Our courses help individuals and systems:</p> 
@@ -289,13 +295,15 @@
   </div>
 
   <div class = "case_study_display">
-    <div class = "large_image540"><%= image_tag("temp/red_pic.png", :size => "180x540" ) %></div>
-	<div class = "tall_thin">
-	  <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-	  <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>
-	  <div class = "case_study_link"><%= image_tag("temp/case_study.png", :size => "180x180") %></div>  
-	</div>
-	<div class = "large_image540"><%= image_tag("temp/red_pic.png", :size => "180x540" ) %></div>
+    <div class = "box_element"><%= image_tag("homeImages/learn_top_left.png", :size => "180x180" ) %></div>
+    <div class = "caseStudyLink lightSquare"><p>How do you build rigorous thinking into critical business systems?</p></div>
+    <div class = "box_element"><%= image_tag("homeImages/learn_top_right.png", :size => "180x180" ) %></div>
+
+    <div class = "caseStudyLink darkSquare"><p>How do you encourage innovative thinking throughout the organisation?</p></div>
+    <div class = "box_element"><%= image_tag("homeImages/learn_middle.png", :size => "180x180" ) %></div>
+    <div class = "caseStudyLink darkSquare"><p>How do you equip people with new skills in leading group thinking processes?</p></div>
+
+    <div class = "large_image180"><%= image_tag("homeImages/learn_bottom.png", :size => "540x180" ) %></div>
   </div>
 
 

@@ -273,14 +273,14 @@
 
 .domainServices {
 	background: #e8e5de;
-	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
 	float: left;
-	height: 157px;
+	height: 180px;
 	width: 179px;
 }
 .domainServices a {
 	float: left;
-	height: 157px;
+	height: 180px;
 	width: 179px;
 }
 .domainServices h3 {
@@ -309,7 +309,39 @@
 	width: 125px;
 }
 
+.caseStudyLink {
+	float: left;
+	height: 180px;
+	width: 180px;
+	position: relative;
+	cursor:pointer;
+}
+.darkSquare{
+	background: #e8e5e1;
+}
+.lightSquare {
+	background: #f3f1f0;
+}
 
+.caseStudyLink  p{
+	color: #e5632a;
+	font-family: 'proxima-nova-1', 'proxima-nova-2', 'Arial', 'Helvetica', 'sans-serif';
+	font-size: 16px;
+	font-weight: 100;
+	left: 0;
+	line-height: 30px;
+	position:absolute;
+    padding-top:30px;
+	padding-left: 20px;
+	padding-right:20px;
+
+}
+
+
+
+
+/* not yet used: .long_caption{width:1080px; height:20px; background:#6B6A68; float:left;}
+*/
 
 
 

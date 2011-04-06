@@ -106,12 +106,15 @@ function initMenu() {
   $('div.openIt').click(function(){
     $(this).parent().next().animate({width: "toggle"}, 500);
 	$('html, body').animate({
-	    scrollLeft: ($(this).offset().left)-233
+	    scrollLeft: ($(this).offset().left)-233+180
 	}, 1000);
   });
 
   $('div.closeIt').click(function(){
-	$(this).parent().animate({width:0},500)	
+	$(this).closest('div.home_sliding_box').animate({width: "hide"}, 500);
+	$('html, body').animate({
+	    scrollLeft: ($("div#firstDomain").offset().left)-233
+	}, 1000);
   });
 
 // this one to stop animation when manually scrolling
