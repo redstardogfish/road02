@@ -33,7 +33,9 @@ function initMenu() {
 	$("#box").animate({opacity: "0", left: "+=1200"}, 5000);
 
   initMenu();
-
+  $('html, body').animate({
+	   scrollLeft: ($("div#firstDomain").offset().left)-233
+	   }, 2000);
 
 	// the initial scroll
 	//   $('html, body').animate({
