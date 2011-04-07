@@ -22,10 +22,10 @@
 
 <!-- LEAD -->
 
-<div class = "one_col" id ="firstDomain">
+<div class = "one_col">
     <div class = "large_image360"> <%= image_tag("placeholders/home_1.png") %></div>
     <div class = "openIt">
-	  <div class="domainServices">
+	  <div class="domainServices" id ="firstDomain">
   	    <a>
 		  <h3>LEAD</h3>
 	      <p>Influence wisely.</p>
@@ -33,7 +33,7 @@
 	  </div>
     </div>                      
 </div>
-<div class = "home_sliding_box">
+<div class = "home_sliding_box" id = "domainLead">
   <div class = "home_text">
     <div class="closeIt">CLOSE</div>
     <h1>	Lead - influence wisely</h1>
@@ -83,7 +83,7 @@
 	</div>                      
 </div>
 
-<div class = "home_sliding_box">
+<div class = "home_sliding_box" id = "domainStrategize">
   <div class = "home_text" >
     <div class="closeIt">CLOSE</div>	
     <h1>	Strategise - define direction in an age of uncertainty</h1>
@@ -106,11 +106,30 @@
 	  </ul>
     </div>	
   </div>
+
   <div class = "case_study_display">
+	<div class = "caseStudy" id = "strategize1_target">
+	  <div class="caseStudyClose">CLOSE</div>	
+	  <p>A client in the infrastructure industry wanted to make strategic choices about how it positioned itself for the future. It was willing to make bold changes to its business model, or to move into new geographies or new kinds of value offering. But how to be wise about those choices? How to be strategic in the face of a turbulent future where societal trends might open up great possibilities, or close others down entirely?</p>
+
+	  <p>Second Road created an immersive environment for the executive team - a ‘strategy lab’ - helping them to project their image of their business into the industry landscape of the decades to come. It was not a matter of making brittle predictions, but rather of identifying industry, natural and social forces which would inevitably play a part in shaping the environment in which they could play.</p>
+
+      <p>By visualising future possibilities and applying powerful heuristics for choosing strategic options, the executive group set bold direction for their organisation over immediate and long term horizons.</p>
+	</div>
+	
+	<div class = "caseStudy" id = "strategize3_target">
+	  <div class="caseStudyClose">CLOSE</div>	
+	  <p>A company in the telecommunications industry had set itself a challenging growth target - growth that would need to come from radical strategy. They had identified potentially lucrative new markets, but the current management mindset tended to stick with business as it had been in the past. The company also knew that it faced the challenge of building new capability among its people at the same time as it initiated work to take hold of new opportunities.</p>
+
+	  <p>Second Road helped the company to discover entirely new sources of revenue - unearthing new value in emerging markets. These new directions would also challenge the business to evolve its fundamental business model.</p>
+
+      <p>	We also helped them to frame their propositions in a way that would allow more cautious managers to understand the opportunity and to buy into it as it developed and strengthened. The framework brought together possible new markets, new sectors and new clients, crystallised in new compelling value propositions. The process of strategic innovation helped move managers from ambiguous situation to reliable new business.</p>
+	</div>
+	
     <div class = "large_image180"><%= image_tag("homeImages/strategize_top.png", :size => "540x180" ) %></div>
-    <div class = "caseStudyLink darkSquare"><p>How do you re-think an industry?</p></div>
+    <div class = "caseStudyLink darkSquare" id = "strategize1"><p>How do you re-think an industry?</p></div>
     <div class = "caseStudyLink lightSquare"><p>How do you shift a deeply bureaucratic enterprise?</p></div>
-    <div class = "caseStudyLink darkSquare"><p>How do you create a compelling value proposition?</p></div>
+    <div class = "caseStudyLink darkSquare" id = "strategize3"><p>How do you create a compelling value proposition?</p></div>
     <div class = "large_image180"><%= image_tag("homeImages/strategize_bottom.png", :size => "540x180" ) %></div>
   </div>
 
@@ -130,7 +149,7 @@
     </div>                      
 </div>
 
-<div class = "home_sliding_box">
+<div class = "home_sliding_box" id = "domainInnovate">
   <div class = "home_text" >
     <div class="closeIt">CLOSE</div>	
     <h1>	Innovate - discover new opportunities to invent groundbreaking solutions</h1>
@@ -152,7 +171,21 @@
     </div>	
   </div>
   <div class = "case_study_display">
-    <div class = "caseStudyLink darkSquare"><p>How do you sponsor a culture of creativity?</p></div>
+	<div class = "caseStudy" id = "innovate1_target">
+	  <div class="caseStudyClose">CLOSE</div>	
+	  <p>The leadership group in a large insurance company could see the enormous untapped potential within its existing workforce. The challenge was at the level of the organisation’s culture, which preferred tried and tested ways of working, rather than looking for creativity and rewarding innovative proposals. It did not want to start an specialised department for innovation - an ‘innovation ghetto’ - rather it wanted ‘design thinking’ to be a hallmark of work throughout the business.</p>
+
+	  <p>With our client we designed a development program to introduce staff throughout the organisation to design thinking. The aim was to build design awareness and capability among regular staff, rather than specialists. Centred on a suite of Second Road Thinking Technologies™, groups were introduced to the principles of design thinking, and given the opportunity to apply them to their work environment.</p>
+	</div>
+	
+	<div class = "caseStudy" id = "innovate3_target">
+	  <div class="caseStudyClose">CLOSE</div>	
+	  <p>A large public vocational education institute felt that if meandered on the way it was going, it would soon lose relevance to both young people looking to enter the workforce, and to the government, its main source of funding. They needed to take action, and thinking about how they were relevant to its various stakeholders seemed a good place to start.</p>
+
+	  <p>This was the first step on a long and surprising journey with Second Road. Rather than treating students as simply an external stakeholder or customer, we helped them to enter richly into the outlook and experience of their potential customers. A deep identification with the point of view of these crucial users of the education services led the institute to fundamentally rethink its values, objectives and working models. This in turn led to a transformation of its basic stance as a player in the relationships between a new workforce, employers and government.</p>
+	</div>
+	
+    <div class = "caseStudyLink darkSquare" id = "innovate1"><p>How do you sponsor a culture of creativity?</p></div>
     <div class = "large_image180"><%= image_tag("homeImages/innovate_top_right.png", :size => "360x180" ) %></div>
 
 	<div class = "box_element"><%= image_tag("homeImages/innovate_middle_left.png", :size => "180x180" )%></div>	
@@ -160,13 +193,7 @@
     <div class = "box_element"><%= image_tag("homeImages/innovate_middle_right.png", :size => "180x180") %></div>
 	
     <div class = "large_image180"><%= image_tag("homeImages/innovate_bottom_left.png", :size => "360x180" ) %></div>
-    <div class = "caseStudyLink darkSquare"><p>Who is the real client and how do we accommodate their needs?</p></div>
-
-
-
-
-
-
+    <div class = "caseStudyLink darkSquare" id = "innovate3"><p>Who is the real client and how do we accommodate their needs?</p></div>
 
   </div>
 </div>
@@ -185,7 +212,7 @@
 
 </div>
 
-<div class = "home_sliding_box">
+<div class = "home_sliding_box" id = "domainEngage">
   <div class = "home_text" >
     <div class="closeIt">CLOSE</div>
     <h1>	Engage - inspire communities toward action</h1>
@@ -203,9 +230,15 @@
     </div>	
   </div>
   <div class = "case_study_display">
+	<div class = "caseStudy" id = "engage3_target">
+	  <div class="caseStudyClose">CLOSE</div>	
+	  <p>A client had just stepped into the role of CEO for a company that had taken a battering over the last few years. The business units were at one another’s throats, the stock price was down after a series of bad new announcements and the very future of the company was in doubt. There was no time to sit back and slowly take stock of the situation.</p>
+
+	  <p>With Second Road, the CEO crafted a series of events and conversations designed to invite engagement from people throughout the company. These were centred on some key messages and models from which leaders could build their own meaning and strategy. At the same time the business units joined together to plan their future together, seeing for the first time the nature of each other’s operations, and opportunities to make the output of the group as a whole greater than the sum of their individual business outcomes.</p>
+	</div>
     <div class = "caseStudyLink darkSquare"><p>How do you bring change that is relevant for all employees?</p></div>
     <div class = "caseStudyLink lightSquare"><p>How do you co-design a shared vision?</p></div>
-    <div class = "caseStudyLink darkSquare"><p>How do you shift from compliance to clarity of intent?</p></div>
+    <div class = "caseStudyLink darkSquare" id = "engage3"><p>How does a new CEO create a culture of change in the first 100 days?</p></div>
     <div class = "large_image360"><%= image_tag("homeImages/engage_bottom.png", :size => "540x360" ) %></div>
   </div>
 </div>
@@ -224,7 +257,7 @@
     </div>                      
 </div>
 
-<div class = "home_sliding_box">
+<div class = "home_sliding_box" id = "domainClarify">
   <div class = "home_text" >
     <div class="closeIt">CLOSE</div>
     <h1>	Clarify - turn volumes of information into useful knowledge</h1>
@@ -248,10 +281,23 @@
     </div>	
   </div>
   <div class = "case_study_display">
+	<div class = "caseStudy" id = "clarify1_target">
+	  <div class="caseStudyClose">CLOSE</div>	
+	  <p>The board of a public company client would regularly receive a risk report, carefully collated from all the activities of five diverse business units. No stone went unturned, or so it would seem - all was bound up in an inch thick document. Unfortunately, the clear and present business-threatening was half way down page 324. And the cluster of risks that weren’t a part of present operations - including regional market shifts and potential pressure from finance bodies - didn’t feature at all. For all its worthy detail, the document was worse than useless for a board member.</p>
+
+	  <p>Second Road worked with the board to ask the right questions of the business. This began a transformation in the way that information was passed between the operation and its governing body. A new genre of document - the Top Down Report™ - became the focus of board conversation. These reports answered all of the key questions on a single page, backed up by detail that a reader could dive into at their leisure and quickly locate the detail they sought.</p>
+	</div>
+	<div class = "caseStudy" id = "clarify3_target">
+	  <div class="caseStudyClose">CLOSE</div>	
+	  <p>	A client was involved in a very large infrastructure project for State Government - designing and building a large number of new assets. Progress had ground to a halt, caught in a back and forth game of quibbling about clauses in contract documentation. Engineers would argue the toss about the intention of many design details, with no prospect for actually agreeing to a design specification, let alone a built product.</p>
+
+	  <p>Fundamentally we helped the parties to talk together productively. We created new objects of conversation, centered not on points of contention, but rather on their shared aspiration for designing infrastructure which would serve the community over the decades to come. For the first time, the parties shared a concern for the progress of the project overall, and worked together to advance the design process in record time.</p>
+	</div>
+	
     <div class = "large_image180"><%= image_tag("homeImages/clarify_top.png", :size => "540x180" ) %></div>
-    <div class = "caseStudyLink darkSquare"><p>How do you make sense out of 400 page board report?</p></div>
+    <div class = "caseStudyLink darkSquare" id = "clarify1"><p>How do you make sense out of 400 page board report?</p></div>
     <div class = "caseStudyLink lightSquare"><p>How do you balance customer expectations with the dictates of our legal department?</p></div>
-    <div class = "caseStudyLink darkSquare"><p>How do you shift from compliance to clarity of intent?</p></div>
+    <div class = "caseStudyLink darkSquare" id = "clarify3"><p>How do you shift from compliance to clarity of intent?</p></div>
     <div class = "large_image180"><%= image_tag("homeImages/clarify_bottom.png", :size => "540x180" ) %></div>
   </div>
 </div>
@@ -270,7 +316,7 @@
     </div>                      
 </div>
 
-<div class = "home_sliding_box">
+<div class = "home_sliding_box" id = "domainLearn">
   <div class = "home_text" >
     <div class="closeIt">CLOSE</div>
     <h1>	Learn - building an inquiring mindset</h1>
@@ -314,11 +360,11 @@
 </div>
 
 
-<div class = "one_col">
+<!-- <div class = "one_col">
 	<div class = "openIt"><%= image_tag("placeholders/header_dna.png") %></div>
 </div>
 <div class = "home_text" >
-  <!-- <div class="closeIt">CLOSE</div> -->
+  <div class="closeIt">CLOSE</div>
   <h1>	What makes us different?</h1>
   <div class="col360">
 	<p>Design and Language are the lifeblood of Second Road. The deliberate fusion of these two distinct yet complementary systems acts as catalyst to liberate creative thinking and cohere diverse communities.</p> 
@@ -333,7 +379,7 @@
 	<div class = "openIt"><%= image_tag("placeholders/header_2rstory.png") %></div>
 </div>
 <div class = "home_text" >
-  <!-- <div class="closeIt">CLOSE</div> -->	
+  <div class="closeIt">CLOSE</div>	
   <h1>	What is the 'second road'?</h1>
   <div class="col450">
 	<p>The Western world, from Aristotle onwards, has sought truth and direction along two different paths:</p> 
@@ -347,7 +393,7 @@
 	<p>Business leaders today need the second road - the path of invention and design - to envision compelling yet flexible strategy, create common purpose and mobilise people into action. They need new skills derived from the arts of design, language and storytelling.</p> 
 	<p>Second Road is at the forefront of the ‘second road’ today.</p> 
   </div>	
-</div>
+</div> -->
 
 
 
@@ -359,7 +405,7 @@
 </div>
 
 
-<div id="extras" class="homeServices">  
+<!-- <div id="extras" class="homeServices">  
   <%= image_tag("services-image.jpg", :width => "720", :height => "359" ) %>
   <h2>OUR DOMAINS OF EXPERIENCE AND EXPERTISE</h2>
   <div class="servicesBox" id="servicesBoxStrategise" style="display:block">
@@ -432,4 +478,4 @@
     <h3>What is an authorised organisation?</h3>
     <a href='http://www.reactive.com.au'>Play video</a>
   </div>
-</div>
+</div> -->

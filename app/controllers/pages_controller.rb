@@ -65,7 +65,7 @@ class PagesController < ApplicationController
 
   def temp
     @bodyclass = "home"
-    @width = 20000
+    @width = 12000
 
   end
   def temp2

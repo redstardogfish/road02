@@ -36,16 +36,18 @@ function initMenu() {
   $('html, body').animate({
 	   scrollLeft: ($("div#firstDomain").offset().left)-233
 	   }, 2000);
-
-	// the initial scroll
-	//   $('html, body').animate({
-	//     scrollLeft: 2000
-	// }, 0);
-	//   $('html, body').animate({
-	// 	    scrollLeft: ($("#wrapper").offset().left)-233-180
-	// 	}, 4000);
-	// 
 	
+
+  // potential width calculation
+	
+  // var width = 0;
+  // $('.one_col').each(function() {
+  // 	  width += $(this).outerWidth( true );
+  // });
+  // $('.home_text:visible').each(function() {
+  // 	  width += $(this).outerWidth( true );
+  // });
+  // $('body').css('width', width + 1000);
 
 
 
@@ -95,10 +97,11 @@ function initMenu() {
   });
 
   $('.menu_trigger').click(function(){
-  	var target_id = ("#" + $(this).attr("id")+"_fuse_target");
+	$('.home_sliding_box').animate({width:"hide"}, 0);
+  	var target_id = ("#domain" + $(this).attr("id"));
     $(target_id).animate({ width: "show" }, 0 );	
     $('html, body').animate({
-	    scrollLeft: ($(target_id).offset().left)-233-180
+	    scrollLeft: ($(target_id).offset().left)-233
 	}, 1000);
   });
   $('a.closeIt').click(function(){
@@ -106,17 +109,30 @@ function initMenu() {
   });
   
   $('div.openIt').click(function(){
+	$('.home_sliding_box').animate({width:"hide"}, 0);
     $(this).parent().next().animate({width: "toggle"}, 500);
 	$('html, body').animate({
 	    scrollLeft: ($(this).offset().left)-233+180
 	}, 1000);
+	$("#what").slideDown('normal');
   });
 
   $('div.closeIt').click(function(){
+	$('.caseStudy').hide();
 	$(this).closest('div.home_sliding_box').animate({width: "hide"}, 500);
 	$('html, body').animate({
 	    scrollLeft: ($("div#firstDomain").offset().left)-233
 	}, 1000);
+  });
+
+  $('div.caseStudyClose').click(function(){
+	$('.caseStudy').fadeOut('slow');
+  });
+
+
+  $('.caseStudyLink').click(function(){
+    var target_id = ("#" + $(this).attr("id")+"_target");
+    $(target_id).fadeIn('slow');	
   });
 
 // this one to stop animation when manually scrolling
@@ -125,6 +141,9 @@ function initMenu() {
 	  $("html,body").stop();
 	 }
 	});
+	
+
+	
 	
 	//   $('img[src*="header_"]').mouseover(function(){
 	// var prefix = ($(this).attr("src").split('.png', 1));

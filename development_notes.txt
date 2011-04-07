@@ -58,3 +58,9 @@ I'm at the end of a piece of work.
 Got pictures to replace placeholders from tim gs. Placed them. 
 Reinstalled the x boxes to close the sliding boxes. A bit tricky to identify the right div to close. 
 Also got the menu to slide back to left when you close a box.
+
+
+8.4.11
+I'm adding the case studies, linked to questions in the domains.
+Each question has an id# like 'strategy1' and each case study has an id of eg 'strategy1_target'. Jquery makes that target id based on the trigger question, and fades in the box: .caseStudy is display:none until that trigger. The case study layout is plain at the moment, and needs, eg graphics.
+
