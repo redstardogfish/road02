@@ -33,7 +33,7 @@
   <div class="mainNav">
     <ul id="menu">
 
-	  <li class="whatWeDo parent"><a href="#firstDomain">What We Do</a><ul id = "what">
+	  <li class="whatWeDo parent"><a id = "whatHeader">What We Do</a><ul id = "what">
           <!-- The argument here becomes the # for the item, the name of which is linked to the domain to expand  -->
 	      <%= activate_li("Lead")%>Lead</li>
 	      <%= activate_li("Strategize")%>Strategize</li>
@@ -67,7 +67,7 @@
 
   </header>
 
-  <%= tag(:div, {:id => "wrapper", :style => "width:#{@width}px; background:url(../images/background_path.png);"}, true ) %>
+  <%= tag(:div, {:id => "wrapper", :style => "width:#{@width}px;"}, true ) %>
     <%= yield %>
   </div>
 

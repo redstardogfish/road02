@@ -373,6 +373,10 @@
 }
 
 
+/* To get What we do meun item to scroll to closed menu box*/
+#whatHeader {
+	cursor:pointer;
+}
 
 
 

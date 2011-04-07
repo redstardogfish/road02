@@ -142,6 +142,16 @@ function initMenu() {
 	 }
 	});
 	
+	
+// this to scroll the What We Do menu item to the wide box closed
+  $('#whatHeader').click(function(){
+	$('.home_sliding_box').animate({width:"hide"}, 0);
+	$('html, body').animate({
+	    scrollLeft: ($("div#firstDomain").offset().left)-233
+	}, 1000);
+  });
+
+	
 
 	
 	
