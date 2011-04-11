@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
     @bodyclass = "home"
-    @width = 20000
+    @width = 720
   end
   
   def splash

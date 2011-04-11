@@ -375,12 +375,13 @@
 	display:none;
 	float:left;
 	background:#fff;
-}
-#openingPanelAnswer p {
-	margin: 40px;
-	
+	position:absolute;
 }
 
+
+.fadeInPanelContent {
+		margin: 40px;
+}
 
 li.active{
 	background: url("../images/orangeArrow.png") no-repeat scroll 0 9px transparent !important;
