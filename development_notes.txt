@@ -64,3 +64,8 @@ Also got the menu to slide back to left when you close a box.
 I'm adding the case studies, linked to questions in the domains.
 Each question has an id# like 'strategy1' and each case study has an id of eg 'strategy1_target'. Jquery makes that target id based on the trigger question, and fades in the box: .caseStudy is display:none until that trigger. The case study layout is plain at the moment, and needs, eg graphics.
 
+11.4
+I'm working on getting an opening page up. First design: a graphic background of strategy+innovation, a click thru question that reveals the opening text. 
+Starting off working on the case studies model.
+
+

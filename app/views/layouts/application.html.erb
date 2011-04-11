@@ -28,19 +28,19 @@
 
 <%= tag(:body, {:class => @bodyclass}, true ) %>
   <header>
-    <%= link_to image_tag("logo.png", :alt => "Second Road", :width => 223, :height => 180), "#content_opening", :id => "logo" %>
+    <%= link_to image_tag("logo.png", :alt => "Second Road", :width => 223, :height => 180), root_path, :id => "logo" %>
 
   <div class="mainNav">
     <ul id="menu">
 
-	  <li class="whatWeDo parent"><a id = "whatHeader">What We Do</a><ul id = "what">
+	  <li class="whatWeDo parent"><a id = "whatHeader" href = "/pages/what_we_do">What We Do</a><ul id = "what">
           <!-- The argument here becomes the # for the item, the name of which is linked to the domain to expand  -->
-	      <%= activate_li("Lead")%>Lead</li>
-	      <%= activate_li("Strategize")%>Strategize</li>
-	      <%= activate_li("Innovate")%>Innovate</li>
-	      <%= activate_li("Engage")%>Engage</li>
-	      <%= activate_li("Clarify")%>Clarify</li>
-	      <%= activate_li("Learn")%>Learn</li>
+	      <%= activate_li("Lead")%><a>Lead</a></li>
+	      <%= activate_li("Strategize")%><a>Strategize</a></li>
+	      <%= activate_li("Innovate")%><a>Innovate</a></li>
+	      <%= activate_li("Engage")%><a>Engage</a></li>
+	      <%= activate_li("Clarify")%><a>Clarify</a></li>
+	      <%= activate_li("Learn")%><a>Learn</a></li>
 
 	    </ul>
 	  </li>

@@ -39,27 +39,30 @@ class PagesController < ApplicationController
   
   
 
-  def whatWeDo
+  def what_we_do
+    @bodyclass = "home"
+    @width = 12000
+    @menuitem = "whatWeDo"
   end
 
   def strategy
     @bodyclass = "contentColumns"
-    @menuitem = "strategy"
+    @menuitem = "strategize"
   end
 
   def innovation
     @bodyclass = "contentColumns"
-    @menuitem = "innovation"
+    @menuitem = "innovate"
   end
 
   def engagement
     @bodyclass = "contentColumns"
-    @menuitem = "engagement"
+    @menuitem = "engage"
   end
 
   def clarity
     @bodyclass = "contentColumns"
-    @menuitem = "clarity"
+    @menuitem = "clarify"
   end
 
 

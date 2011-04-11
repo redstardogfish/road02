@@ -6,7 +6,94 @@ $(function(){
 		width : 300,
 		height : 600
 	});
+	
+// this to open the menu to the active item	
+  initMenu();
+
+	
+// this for the opening panel fade in.
+	$('#openingPanelQuestion').click(function(){
+    $('#openingPanelAnswer').fadeIn('slow');	
+    });
+
+// this to fade in a case study and to scroll to place it near centre.
+	$('.caseStudyLink').click(function(){
+     var target_id = ("#" + $(this).attr("id")+"_target");
+     $(target_id).fadeIn('slow');	
+	 $('html, body').animate({
+	    scrollLeft: ($(target_id).offset().left)-233 - 180
+	 }, 1000);
+    });
+
+// this one to stop animation when manually scrolling
+	$('body,html').bind('scroll mousedown DOMMouseScroll mousewheel keyup', function(e){
+	 if ( e.which > 0 || e.type == "mousedown" || e.type == "mousewheel"){
+	  $("html,body").stop();
+	 }
+	});
+
+
+// this to scroll the What We Do menu item to the wide box closed
+	$('#whatHeader').click(function(){
+      if ($('div#firstDomain').length ) {
+		 $('.home_sliding_box').animate({width:"hide"}, 0);
+		 $('html, body').animate({
+		    scrollLeft: ($("div#firstDomain").offset().left)-233
+		  }, 1000);
+	  } else {
+		window.location.href = "what_we_do";
+  	  }
+
+    });
+
+// this to open the What We Do menu list and scroll to pic and menu if it is What We Do page
+    if ($('#firstDomain').length){
+	  $('.menu_trigger').removeClass('active');
+	  $('#what').slideDown('normal');
+	  $('html, body').animate({
+		   scrollLeft: ($("div#firstDomain").offset().left)-233
+		   }, 2000);
+    };
+
+// localScroll initialisation
+    $.localScroll.defaults.axis = 'x';
+    $.localScroll({offset: (-233-180), easing: "easeOutBack", duration: 1000 });
+
+
+// to open domain descriptions
+  $('div.openIt').click(function(){
+	$('.home_sliding_box').animate({width:"hide"}, 0);
+    $(this).parent().next().animate({width: "show"}, 500);
+	$('html, body').animate({
+	    scrollLeft: ($(this).offset().left)-233+180
+	}, 1000);
+	$("#what").slideDown('normal');
+	var menuLine = $(this).parent().next().attr("id").split("domain")[1];
+    $('.menu_trigger').removeClass('active');
+	$('#'+menuLine).addClass('active');
+
+  });
+
+// to close domain descriptions
+  $('div.closeIt').click(function(){
+	$('.caseStudy').hide();
+	$(this).closest('div.home_sliding_box').animate({width: "hide"}, 500);
+	var menuLine = $(this).closest('div.home_sliding_box').attr("id").split("domain")[1];
+	$('#'+menuLine).removeClass('active');
+	$('html, body').animate({
+	    scrollLeft: ($("div#firstDomain").offset().left)-233
+	}, 1000);
+  });
+
+// to close case studies (fade rather than slide)
+  $('div.caseStudyClose').click(function(){
+	$('.caseStudy').fadeOut('slow');
+  });
+
+
 });
+
+
 
 
 
@@ -15,51 +102,22 @@ function initMenu() {
   $('#menu').find('li.active').parent('ul').show();	
   $('#menu li a').click(
     function() {
+	  $('.menu_trigger').removeClass('active');
+	  $(this).parent().addClass('active');
       var checkElement = $(this).next();
-      if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-        return false;
-        }
-      if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-        $('#menu ul:visible').slideUp('normal');
-        checkElement.slideDown('normal');
-        return false;
-        }
-      }
-    );
-  }
-
+      if(checkElement.is(':visible')) {
+	    return false;
+	  };
+      // if(!checkElement.is(':visible')) {
+      //   $('#menu ul:visible').slideUp('normal');
+      //   checkElement.slideDown('normal');
+      //   return false;
+      // };
+     });
+};
 
   $(document).ready(function () {
-	$("#box").animate({opacity: "0", left: "+=1200"}, 5000);
 
-  initMenu();
-  $('html, body').animate({
-	   scrollLeft: ($("div#firstDomain").offset().left)-233
-	   }, 2000);
-	
-
-  // potential width calculation
-	
-  // var width = 0;
-  // $('.one_col').each(function() {
-  // 	  width += $(this).outerWidth( true );
-  // });
-  // $('.home_text:visible').each(function() {
-  // 	  width += $(this).outerWidth( true );
-  // });
-  // $('body').css('width', width + 1000);
-
-
-
-  $.localScroll.defaults.axis = 'x';
-  $.localScroll({offset: (-233-180), easing: "easeOutBack", duration: 1000 });
-
-  $('a.viewToggle').bind('click', function() {
-	$('ul.communityList').animate({ 'left' : '0' }, 1000);});
-	
-  $('a.articleClose').click(function() {
-	$('ul.communityList').delay(250).animate({ 'left' : '-54px' }, 750);
-  });
 
   $('a.viewExpand').bind('click', function(){
    	$("div#expandable").animate( { width: "show", height: "show" }, 1500 );
@@ -74,13 +132,6 @@ function initMenu() {
 	$('div#expandable').fadeOut(1000);
   });
 
-	//   $('a.splash_help').click(function(){
-	//     $('div#content_opening').fadeIn(1000);
-	//     $('#wrapper').delay(1000).animate({'left':'-540px'}, 1000);	
-	// $("#box").animate({opacity: "0", left: "+=1200"}, 5000);
-	//     window.location = '/';
-	// 		return false;	
-	//   });
 
   $('#trigger_exp').bind('click', function(){
    	$("div#exp").slideToggle(1500);
@@ -104,54 +155,9 @@ function initMenu() {
 	    scrollLeft: ($(target_id).offset().left)-233
 	}, 1000);
   });
-  $('a.closeIt').click(function(){
-    $((this).parent).animate({width: 'toggle'}, 500)	
-  });
+
+
   
-  $('div.openIt').click(function(){
-	$('.home_sliding_box').animate({width:"hide"}, 0);
-    $(this).parent().next().animate({width: "toggle"}, 500);
-	$('html, body').animate({
-	    scrollLeft: ($(this).offset().left)-233+180
-	}, 1000);
-	$("#what").slideDown('normal');
-  });
-
-  $('div.closeIt').click(function(){
-	$('.caseStudy').hide();
-	$(this).closest('div.home_sliding_box').animate({width: "hide"}, 500);
-	$('html, body').animate({
-	    scrollLeft: ($("div#firstDomain").offset().left)-233
-	}, 1000);
-  });
-
-  $('div.caseStudyClose').click(function(){
-	$('.caseStudy').fadeOut('slow');
-  });
-
-
-  $('.caseStudyLink').click(function(){
-    var target_id = ("#" + $(this).attr("id")+"_target");
-    $(target_id).fadeIn('slow');	
-  });
-
-// this one to stop animation when manually scrolling
-	$('body,html').bind('scroll mousedown DOMMouseScroll mousewheel keyup', function(e){
-	 if ( e.which > 0 || e.type == "mousedown" || e.type == "mousewheel"){
-	  $("html,body").stop();
-	 }
-	});
-	
-	
-// this to scroll the What We Do menu item to the wide box closed
-  $('#whatHeader').click(function(){
-	$('.home_sliding_box').animate({width:"hide"}, 0);
-	$('html, body').animate({
-	    scrollLeft: ($("div#firstDomain").offset().left)-233
-	}, 1000);
-  });
-
-	
 
 	
 	

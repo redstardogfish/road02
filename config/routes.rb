@@ -21,7 +21,7 @@ Road01::Application.routes.draw do
   
   
 
-  get "pages/whatWeDo"
+  get "pages/what_we_do"
 
   get "pages/strategy"
 
@@ -36,6 +36,8 @@ Road01::Application.routes.draw do
   get "pages/temp2"
   
   root :to => "pages#home"
+  
+  match 'what_we_do', :to => 'pages#what_we_do', :as => "what_we_do"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

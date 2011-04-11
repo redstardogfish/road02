@@ -43,26 +43,10 @@
 	background: url("../images/blackboard.png");
 }
 
-  #roadway{
-	display:none; width:0;height:60px;
-	
-  }
-
-#box {
-	height: 36px;
-	width: 36px;
-	margin-top:550px;
-    position:absolute;
-}
-
 .whoWeAre_panel{
 	width:720px;height:540px; display:block;background: #f7f6f2;
 		float: left;overflow:hidden;
 }
-
-
-
-
 
 #trigger_exp_target{
 	background:red;
@@ -376,6 +360,30 @@
 /* To get What we do meun item to scroll to closed menu box*/
 #whatHeader {
 	cursor:pointer;
+}
+
+#openingPanel {
+	background:  url(../images/placeholders/strategy_and_innovation.png) no-repeat;;
+}
+#openingPanelQuestion {
+	margin-top: 400px; width: 300px; float:right; cursor:pointer;
+}
+
+
+#openingPanelAnswer{
+	width:540px; height:540px;
+	display:none;
+	float:left;
+	background:#fff;
+}
+#openingPanelAnswer p {
+	margin: 40px;
+	
+}
+
+
+li.active{
+	background: url("../images/orangeArrow.png") no-repeat scroll 0 9px transparent !important;
 }
 
 
